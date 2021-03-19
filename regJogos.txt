@@ -1,0 +1,7 @@
+
+10/03/2021,CRU,URT,Independendcia,1,1,2,2,0,0
+12/03/2021,America,Tombense,Tombos,2,3,2,2,1,1
+15/03/2021,Boa,CAM,Mineirão,1,3,2,2,0,0
+18/03/2021,UBERLANDIA,AMERICA,Independencia,4,2,2,2,1,1
+14/03/2021,coimbra,ipatinga,ipaginga,4,2,1,1,0,0
+18/03/2021,Montes Claros,Caldense,Montes Claros,2,3,1,1,1,1
