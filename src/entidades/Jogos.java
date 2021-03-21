@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Jogos implements Serializable{
 	private static final long serialVersionUID = 1L;
-	private String datajogo;
+	//private Date datajogo;
 	private String equipeMandante;
 	private String equipeVisitante;
 	private String localJogo;
@@ -23,9 +23,9 @@ public class Jogos implements Serializable{
 	public Jogos() {
 	}
 
-	public Jogos(String datajg, String equipeMandante, String equipeVisitante, String localJogo, int numGolsMandante,
+	public Jogos(String equipeMandante, String equipeVisitante, String localJogo, int numGolsMandante,
 			int numGolsVisitante, int numCAmareloMand, int numCAmareloVis, int numCVermelhoMand, int numCVermelhoVis) throws ParseException {
-		this.datajogo = sdf1.format(datajg);
+	//	this.datajogo = sdf1.format(datajogo2);
 		this.equipeMandante = equipeMandante;
 		this.equipeVisitante = equipeVisitante;
 		this.localJogo = localJogo;
@@ -37,13 +37,6 @@ public class Jogos implements Serializable{
 		this.numCVermelhoVis = numCVermelhoVis;
 	}
 
-	public String getDatajogo() {
-		return datajogo;
-	}
-
-	public void setDatajogo(String datajogo) {
-		this.datajogo = datajogo;
-	}
 
 	public String getEquipeMandante() {
 		return equipeMandante;
@@ -119,11 +112,7 @@ public class Jogos implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Jogos [datajogo=" + datajogo + ", equipeMandante=" + equipeMandante + ", equipeVisitante="
-				+ equipeVisitante + ", localJogo=" + localJogo + ", numGolsMandante=" + numGolsMandante
-				+ ", numGolsVisitante=" + numGolsVisitante + ", numCAmareloMand=" + numCAmareloMand
-				+ ", numCAmareloVis=" + numCAmareloVis + ", numCVermelhoMand=" + numCVermelhoMand + ", numCVermelhoVis="
-				+ numCVermelhoVis + "]";
+		return String.format("%-15s %-15s %-15s %7d %7d %9d %7d %7d %7d",equipeMandante,equipeVisitante,localJogo,numGolsMandante,numGolsVisitante,numCAmareloMand, numCAmareloVis, numCVermelhoMand,numCVermelhoVis);
 	}
 	
 	
